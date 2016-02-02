@@ -47,13 +47,21 @@ var wiki = new Wiki({
 ## Output
 You can retrieve pages as Markdown, an HTML snippet, or a full HTML page.
 
-
 ```
 console.log(wiki.pages.Home.markdown)      // Contents of Home.md, e.g. *Hello*, World!
 console.log(wiki.pages.Home.html)          // <p><i>Hello</i>, World!</p>
 console.log(wiki.sidebar.html)             // This is GitHub's special _Sidebar.md page
 console.log(wiki.pages.Home.combined)      // HTML that combines both Home.md and _Sidebar.md
 console.log(wiki.pages.Home.full)          // A full HTML page
+```
+
+This allows you to render the wiki HTML inside your own templates (e.g. with your login bar at the top)
+
+```js
+App.get('/wiki/:page', function(req, res) {
+  var page = wiki.pages[req.params.page];
+  res.render('my_layout', {content: page.combined})
+})
 ```
 
 ## Relative Links
