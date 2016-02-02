@@ -31,6 +31,9 @@ App.get('/:page', function(req, res, next) {
 })
 ```
 
+If you don't want to deal with submodules, you can also add your wiki as an npm dependency
+by adding a package.json at the root directory of your wiki's repo.
+
 ## Options
 ```js
 var wiki = new Wiki({
