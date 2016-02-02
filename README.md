@@ -63,6 +63,6 @@ Read more [here](Page2)
 Where Page2.md is another page in the wiki.
 
 If you're not serving the wiki on the root of your domain (e.g. you're serving it at mydomain.com/wiki),
-you'll need to set the <base> tag of wiki pages accordingly (eg. <base href="/wiki/">)
+you'll need to set the <base> tag of wiki pages accordingly (eg. &lt;base href="/wiki/"&gt;)
 
 If you're using the `full` output option, it will suffice to set the `basePath` option, e.g. `/wiki`
