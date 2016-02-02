@@ -1,0 +1,24 @@
+{
+  "name": "wiki-serve",
+  "version": "1.0.0",
+  "description": "Serve any GitHub wiki as part of your site",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bobby-brennan/wiki-serve.git"
+  },
+  "keywords": [
+    "GitHub",
+    "wiki",
+    "HTML"
+  ],
+  "author": "Bobby Brennan",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/bobby-brennan/wiki-serve/issues"
+  },
+  "homepage": "https://github.com/bobby-brennan/wiki-serve#readme"
+}

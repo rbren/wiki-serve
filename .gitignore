@@ -1,0 +1,5 @@
+creds/
+node_modules/
+static/bower/
+static/minified/js/*.js
+static/minified/css/*.css
