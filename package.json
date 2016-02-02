@@ -20,5 +20,8 @@
   "bugs": {
     "url": "https://github.com/bobby-brennan/wiki-serve/issues"
   },
-  "homepage": "https://github.com/bobby-brennan/wiki-serve#readme"
+  "homepage": "https://github.com/bobby-brennan/wiki-serve#readme",
+  "dependencies": {
+    "jade": "^1.11.0"
+  }
 }
