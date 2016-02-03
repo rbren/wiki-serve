@@ -2,10 +2,11 @@ var chai = require('chai');
 
 describe('Parse', function() {
 
-  it('should return default constants with no options', function() {
-    var options = require('../../lib/parse.js')();
-    var obj = require('../../lib/defaults.json');
-    chai.expect(options).to.eql(obj);
+  it('should throw "No wiki found" Error', function() {
+    var options;
+    chai.expect(function() {
+      require('../../lib/parse.js')();
+    }).to.throw("No wiki found");
   });
   it('should return default constants plus directory name', function() {
     var input = "tmp";
@@ -25,7 +26,6 @@ describe('Parse', function() {
       }]
     };
     var options = require('../../lib/parse.js')(input);
-    var obj = require('../../lib/defaults.json');
     chai.expect(options).to.eql(input);
   });
 });
