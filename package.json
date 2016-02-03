@@ -23,5 +23,9 @@
   "homepage": "https://github.com/bobby-brennan/wiki-serve#readme",
   "dependencies": {
     "marked": "^0.3.5"
+  },
+  "devDependencies": {
+    "chai": "3.5.0",
+    "mocha": "2.4.5"
   }
 }
