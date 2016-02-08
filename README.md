@@ -77,3 +77,16 @@ If you're not serving the wiki on the root of your domain (e.g. you're serving i
 you'll need to set the base tag of wiki pages accordingly (eg. &lt;base href="/wiki/"&gt;)
 
 If you're using the `full` output option, it will suffice to set the `basePath` option, e.g. to `/wiki`
+
+## Testing
+
+Install all modules
+```
+npm install --all
+
+```
+
+Run the tests
+```
+grunt
+```
